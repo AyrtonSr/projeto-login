@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+/*Typical Devices breakpoints ( 27/05/2024 )
+
+  Mobile devices – 320px — 480px.
+  iPads, Tablets – 481px — 768px.
+  (320 - 768)
+  Small screens, laptops – 769px — 1024px.
+  Desktops, large screens – 1025px — 1200px.
+  (769 - 1200)
+  Extra large screens, TV – 1201px, and more.
+  (1201 - )
+*/
+
+:root{
+    --cor-azul:#001789;
+    --cor-Lilas:#5f2cb2;
+    --cor-Amarelo:#ffe840;
+}
+
+@media screen and (min-width: 568px) and (max-width: 768px) {
+    body{
+        background-image: linear-gradient(to top right, var(--cor-azul), var(--cor-Lilas));
+    }
+    section#login{
+        width: 85vw;
+        height: 450px;
+    }
+    section#login > div#image{
+        float: left;
+        width: 40%;
+        height: 100%;
+        background-size: contain;
+        background-color: var(--cor-azul);
+    }
+    section#login > div#formulario{
+        float: right;
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    body{
+        background-image: linear-gradient(to top right, var(--cor-azul), var(--cor-Lilas));
+    }
+    section#login{
+        min-width: 759px;
+        height: 450px;
+
+    }
+    section#login > div#image{
+        float: left;
+        width: 50%;
+        height: 100%;
+        background-position: center center;
+    }
+    section#login > div#formulario{
+        float: right;
+        width: 50%;
+        height: 100%;
+    }
+}

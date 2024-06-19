@@ -3,10 +3,16 @@
 /*
     Paleta de Cores
     Falta fazer
-    Azul
-    Lilás
-    Amarelo
+    Azul - #001789
+    Lilás - #5f2cb2
+    Amarelo - #ffe840
 */
+
+:root{
+    --cor-azul:#001789;
+    --cor-Lilas:#5f2cb2;
+    --cor-Amarelo:#ffe840;
+}
 
 *{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -16,7 +22,7 @@
 }
 
 body,html{
-    background-color: #5f2cb2;
+    background-color: var(--cor-Lilas);
     height: 100vh;
     width: 100vw;
 }
@@ -39,18 +45,21 @@ section#login{
     height: 500px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.474);
+
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
 }
 
 section#login > div#image{
     display: block;
-    background: #5f2cb2 url(../images/39511.jpg) no-repeat;
+    background: var(--cor-Lilas) url(../images/39511.jpg) no-repeat;
     background-size: cover;
     background-position: center center;
 
     height: 200px;
 }
 
-section#login > div#forulario{
+section#login > div#formulario{
     display: block;
     padding: 10px;
 
